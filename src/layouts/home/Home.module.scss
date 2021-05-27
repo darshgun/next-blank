@@ -1,0 +1,51 @@
+.container {
+}
+
+.hero {
+  padding: 4rem 0;
+  @media (min-width: 768px) {
+    padding: 10rem 0;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 4.2rem;
+    font-weight: 800;
+    margin-bottom: 2.6rem;
+    @media (min-width: 768px) {
+      font-size: 6rem;
+      line-height: 7.2rem;
+    }
+  }
+  h2,
+  .links {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    width: 80%;
+    @media (min-width: 768px) {
+      font-size: 2.6rem;
+      line-height: 4rem;
+    }
+  }
+  .links {
+    .ctaLink {
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
+  h1,
+  h2 {
+    margin-top: 0;
+  }
+  .links {
+    display: flex;
+    gap: var(--spacingBase);
+  }
+}
+
+.featuredProjects {
+  background-color: var(--colorPrimary50);
+  padding: 10rem 0;
+}

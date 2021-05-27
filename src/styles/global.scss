@@ -1,0 +1,84 @@
+@import '~normalize.css/normalize.css';
+
+:root {
+  --colorBackground: #ffffff;
+  --colorForeground: #303030;
+
+  --colorPrimary50: #fafafb;
+  --colorPrimary100: #c8d3fc;
+  --colorPrimary200: #96acfd;
+  --colorPrimary300: #6486fd;
+  --colorPrimary400: #325ffe;
+  --colorPrimary500: #0038ff;
+  --colorPrimary600: #0330d8;
+  --colorPrimary700: #0628b1;
+  --colorPrimary800: #082089;
+  --colorPrimary900: #0b1862;
+  --colorPrimary1000: #0e103b;
+
+  --spacingExtraTight: 1.6rem;
+  --spacingTight: 2rem;
+  --spacingBase: 2.4rem;
+  --spacingLoose: 3rem;
+  --spacingExtraLoose: 3.6rem;
+}
+
+.dark {
+  --colorBackground: #0e103b;
+  --colorForeground: #ffffff;
+
+  --colorPrimary50: #0e103b;
+  --colorPrimary100: #0b1862;
+  --colorPrimary200: #082089;
+  --colorPrimary300: #0628b1;
+  --colorPrimary400: #0330d8;
+  --colorPrimary500: #0038ff;
+  --colorPrimary600: #325ffe;
+  --colorPrimary700: #6486fd;
+  --colorPrimary800: #96acfd;
+  --colorPrimary900: #c8d3fc;
+  --colorPrimary1000: #fafafb;
+}
+
+html,
+body,
+* {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif;
+}
+
+html {
+  font-size: ($base-font-size / $default-browser-font-size) * 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--colorBackground);
+  color: var(--colorForeground);
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--colorPrimary1000);
+}
+
+a {
+  color: var(--colorPrimary1000);
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

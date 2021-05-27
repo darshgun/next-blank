@@ -1,0 +1,12 @@
+.template {
+  width: 100%;
+}
+
+.content {
+  min-height: calc(100vh - 18.5rem);
+}
+
+.contentsCentered {
+  display: flex;
+  align-items: center;
+}

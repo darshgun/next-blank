@@ -1,0 +1,42 @@
+$default-browser-font-size: 16px;
+$base-font-size: 10px;
+
+$mediaMaxWidth: 1260px;
+$mediaBp1Width: 960px;
+$mediaMinWidth: 480px;
+
+.container {
+  padding: 0 var(--spacingBase);
+  margin: 0 auto 5rem;
+  max-width: 98rem;
+}
+
+.ctaLink {
+  padding: 0 0 0 0.4rem;
+  @media (min-width: 768px) {
+    color: var(--colorPrimary900);
+    display: inline-block;
+    height: 3rem;
+    overflow: hidden;
+    padding: 0 4px;
+    span {
+      display: inline-block;
+      position: relative;
+      transition: transform 0.3s;
+      &::before {
+        content: attr(data-hover);
+        font-weight: 500;
+        position: absolute;
+        top: 100%;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+      span {
+        transform: translateY(-100%);
+      }
+    }
+  }
+}

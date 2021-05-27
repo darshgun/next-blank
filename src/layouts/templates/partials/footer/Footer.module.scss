@@ -1,0 +1,40 @@
+$footer-height: 80px;
+
+.footer {
+  font-size: 1.4rem;
+  padding: var(--spacingLoose) var(--spacingTight) var(--spacingTight);
+  text-align: center;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .copyright {
+    display: block;
+    line-height: 1.4;
+    opacity: 0.5;
+    margin-top: var(--spacingExtraTight);
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    &:hover,
+    &:focus-within {
+      opacity: 0.7;
+    }
+  }
+  .socialLinks {
+    margin-top: var(--spacingExtraTight);
+    display: flex;
+    gap: var(--spacingExtraTight);
+    justify-content: center;
+    svg {
+      opacity: 0.5;
+      height: 2.4rem;
+      width: 2.4rem;
+      &:hover,
+      &:focus-within {
+        opacity: 0.7;
+      }
+    }
+  }
+}
